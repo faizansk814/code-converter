@@ -58,7 +58,7 @@
     let qualitybutton=document.getElementById('quality')
     convertbutton.addEventListener('click',()=>{
         container2.innerHTML=""
-        fetch(`http://localhost:8080/api/convertcode?language=${language.value}`,{
+        fetch(`https://code-converter-b33j.onrender.com/api/convertcode?language=${language.value}`,{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
@@ -82,7 +82,7 @@
 
     debugbutton.addEventListener('click',()=>{
         container2.innerHTML=""
-        fetch(`http://localhost:8080/api/debug`,{
+        fetch(`https://code-converter-b33j.onrender.com/api/debug`,{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
@@ -106,7 +106,7 @@
 
     qualitybutton.addEventListener('click',()=>{
         container2.innerHTML=""
-        fetch(`http://localhost:8080/api/qualitycheck`,{
+        fetch(`https://code-converter-b33j.onrender.com/api/qualitycheck`,{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
